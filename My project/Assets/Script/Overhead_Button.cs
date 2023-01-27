@@ -7,7 +7,6 @@ public class Overhead_Button : MonoBehaviour {
 
     public void goToNextScene() {
         SceneManager.LoadScene("Overhead");
-
         
     }
 }

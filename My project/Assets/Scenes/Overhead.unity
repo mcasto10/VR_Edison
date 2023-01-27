@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.10111766, g: 0.28813845, b: 0.5372517, a: 1}
+  m_IndirectSpecularColor: {r: 0.101214334, g: 0.28805837, b: 0.5370623, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -897,9 +897,9 @@ GameObject:
   m_Component:
   - component: {fileID: 200904791}
   - component: {fileID: 200904790}
+  - component: {fileID: 200904787}
   - component: {fileID: 200904789}
   - component: {fileID: 200904788}
-  - component: {fileID: 200904787}
   - component: {fileID: 200904786}
   - component: {fileID: 200904785}
   - component: {fileID: 200904784}
@@ -1043,7 +1043,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 200904788}
-  m_MoveSpeed: 1
+  m_MoveSpeed: 15
   m_EnableStrafe: 1
   m_EnableFly: 0
   m_UseGravity: 1
@@ -1118,8 +1118,8 @@ MonoBehaviour:
   m_Camera: {fileID: 159739171}
   m_OriginBaseGameObject: {fileID: 200904782}
   m_CameraFloorOffsetObject: {fileID: 2107193755}
-  m_RequestedTrackingOriginMode: 2
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 10
 --- !u!4 &200904791
 Transform:
   m_ObjectHideFlags: 0
@@ -1127,7 +1127,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 200904782}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1135,7 +1135,7 @@ Transform:
   - {fileID: 2107193756}
   m_Father: {fileID: 0}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!114 &200904792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1162,34 +1162,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e794a8e8239b7514b9a656b67c8f01c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftTeleportation: {fileID: 1961890564}
-  rightTeleportation: {fileID: 165812335}
-  leftActivate:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Left Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: c7856141-2dd1-49f8-b0ba-bdba4124b372
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: -5982496924579745919, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
-  rightActivate:
-    m_UseReference: 1
-    m_Action:
-      m_Name: Right Activate
-      m_Type: 0
-      m_ExpectedControlType: 
-      m_Id: 9de6a6f5-240e-4d74-a680-6dbf80f0fe11
-      m_Processors: 
-      m_Interactions: 
-      m_SingletonActionBindings: []
-      m_Flags: 0
-    m_Reference: {fileID: 83097790271614945, guid: c348712bda248c246b8c49b3db54643f,
-      type: 3}
 --- !u!1001 &238057642
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2467,6 +2439,26 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 5c093e4058df12042a75bcb967ca1554, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65e3c92ca61ad2344b322606d05ca8ff, type: 3}
+--- !u!1 &904072725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -7029948723529949830, guid: 550669fb8e61eb54382a857354a66f80,
+    type: 3}
+  m_PrefabInstance: {fileID: 497716549}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &904072729
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 904072725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -462981019419857548, guid: 550669fb8e61eb54382a857354a66f80, type: 3}
 --- !u!1 &964309882
 GameObject:
   m_ObjectHideFlags: 0
@@ -4415,7 +4407,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107193755}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
