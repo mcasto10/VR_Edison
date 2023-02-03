@@ -335,8 +335,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 161261800}
-        m_TargetAssemblyTypeName: Overhead_Button, Assembly-CSharp
-        m_MethodName: goToNextScene
+        m_TargetAssemblyTypeName: SceneManager, Assembly-CSharp
+        m_MethodName: goToOverheadScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
