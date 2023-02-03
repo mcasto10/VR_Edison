@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Overhead_Button : MonoBehaviour {
 
     public void goToNextScene() {
-        Debug.Log("next scene");
         SceneManager.LoadScene("Overhead");
           
         
