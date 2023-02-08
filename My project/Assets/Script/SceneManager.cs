@@ -6,6 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour {
 
     public void goToOverheadScene() {
-          SceneManager.LoadScene("Overhead");
+          UnityEngine.SceneManagement.SceneManager.LoadScene("Overhead");
     }
 }
