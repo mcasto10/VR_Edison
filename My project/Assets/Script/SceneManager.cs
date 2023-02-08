@@ -6,10 +6,6 @@ using UnityEngine.SceneManagement;
 public class SceneManager : MonoBehaviour {
 
     public void goToOverheadScene() {
-          UnityEngine.SceneManagement.SceneManager.LoadScene("Overhead");
+          SceneManager.LoadScene("Overhead");
     }
-     public void TruckScene()
-     {
-          UnityEngine.SceneManagement.SceneManager.LoadScene("Truck");
-     }
 }
