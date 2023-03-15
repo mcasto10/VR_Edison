@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TriggerEnter : MonoBehaviour
+public class TriggerEnterA : MonoBehaviour
 {
 
     // public OnTrigger trigger; 
