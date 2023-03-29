@@ -6,6 +6,9 @@ TagManager:
   tags:
   - SamplesInfoPanel
   - SphereZero
+  - SphereOne
+  - SphereTwo
+  - SphereThree
   layers:
   - Default
   - TransparentFX

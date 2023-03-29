@@ -5,16 +5,20 @@ using UnityEngine;
 public class TriggerEnterA : MonoBehaviour
 {
     public GameObject electricLine_A;
-    setLedColor myLed;
+    setLedColor[] leds = new setLedColor[4];
+    string[] spheres = {"SphereZero", "SphereOne", "SphereTwo", "SphereThree"};
 
     void Start() {
-      myLed = GameObject.FindGameObjectWithTag("SphereZero").GetComponent<setLedColor>();
+      for(int i = 0; i < spheres.Length; i++) {
+        leds[i] = GameObject.FindGameObjectWithTag(spheres[i]).GetComponent<setLedColor>();
+      }
     }
 
     void OnTriggerEnter(Collider other)
     {
       electricLine_A.SetActive(true);
-      myLed.setGreen();
+      foreach(setLedColor led in leds) {
+        led.setGreen();
+      }
     }
-
 }
