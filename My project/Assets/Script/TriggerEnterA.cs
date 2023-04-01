@@ -6,7 +6,7 @@ public class TriggerEnterA : MonoBehaviour
 {
     public GameObject electricLine_A;
     setLedColor[] leds = new setLedColor[4];
-    string[] spheres = {"SphereZero", "SphereOne", "SphereTwo", "SphereThree"};
+    string[] spheres = {"WAN", "ERR", "IO", "DC"};
 
     void Start() {
       for(int i = 0; i < spheres.Length; i++) {

@@ -5,10 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - SamplesInfoPanel
-  - SphereZero
-  - SphereOne
-  - SphereTwo
-  - SphereThree
+  - WAN
+  - ERR
+  - IO
+  - DC
   layers:
   - Default
   - TransparentFX

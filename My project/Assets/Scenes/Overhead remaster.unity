@@ -9987,7 +9987,7 @@ GameObject:
   - component: {fileID: 882055181}
   m_Layer: 0
   m_Name: Sphere (2)
-  m_TagString: SphereTwo
+  m_TagString: IO
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11033,7 +11033,7 @@ GameObject:
   - component: {fileID: 1072935751}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: SphereZero
+  m_TagString: WAN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11318,7 +11318,7 @@ GameObject:
   - component: {fileID: 1133660820}
   m_Layer: 0
   m_Name: Sphere (3)
-  m_TagString: SphereThree
+  m_TagString: DC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14797,7 +14797,7 @@ GameObject:
   - component: {fileID: 1475707299}
   m_Layer: 0
   m_Name: Sphere (1)
-  m_TagString: SphereOne
+  m_TagString: ERR
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
