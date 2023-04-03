@@ -10,8 +10,20 @@ public class setLedColor : MonoBehaviour
         ledRenderer = GetComponent<Renderer>();
         ledRenderer.material.color = Color.white;
     }
+    
+    public void setWAN() {
+        ledRenderer.material.color = Color.blue;
+    }
 
-    public void setGreen() {
+    public void setERR() {
+        ledRenderer.material.color = Color.red;
+    }
+
+    public void setIO() {
+        ledRenderer.material.color = Color.yellow;
+    }
+
+    public void setDC() {
         ledRenderer.material.color = Color.green;
     }
 
