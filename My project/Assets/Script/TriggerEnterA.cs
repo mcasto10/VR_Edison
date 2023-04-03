@@ -16,6 +16,7 @@ public class TriggerEnterA : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+      GameObject.FindGameObjectWithTag("DC").GetComponent<DCFlash>().enabled = false;
       electricLine_A.SetActive(true);
       foreach(setLedColor led in leds) {
         led.setGreen();

@@ -19,8 +19,4 @@ public class setLedColor : MonoBehaviour
         ledRenderer.material.color = Color.red;
     }
 
-    public void flash() {
-        ledRenderer.material.color = Color.Lerp(Color.white, Color.green, Mathf.PingPong(Time.time * 1, 1));
-    }
-
 }

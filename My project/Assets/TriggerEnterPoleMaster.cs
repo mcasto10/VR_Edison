@@ -8,6 +8,9 @@ public class TriggerEnterPoleMaster : MonoBehaviour
     
     public GameObject polemasterRoate;
 
+    void Update() {
+    }
+
     void OnTriggerEnter(Collider other)
     {
       polemasterRoate.SetActive(true);
