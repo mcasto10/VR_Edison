@@ -9,9 +9,17 @@ public class MoveToNextPosition : MonoBehaviour
 
     public void Teleport(GameObject NextLocation)
     {
+          
           Transform pos = NextLocation.transform; // get the position of the next location
           player.transform.position = pos.position; // change the position of the player to the next location
           player.transform.rotation = pos.rotation;
+
+
+          ToggleController toggleLocationSetter = new ToggleController();
+          toggleLocationSetter.ToggleValueChanged(pos);
+
+
+          
     }
 
     // hard code teleport position template
