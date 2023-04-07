@@ -13,25 +13,29 @@ public class openclose_smartnav : MonoBehaviour
     private Quaternion clampClose = Quaternion.identity;
 
     private XRGrabInteractable grabInteractable = null;
+    private bool isOpen = false;
 
     // Start is called before the first frame update
     void Start()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
-        grabInteractable.onActivate.AddListener(OnGrab);
-        grabInteractable.onDeactivate.AddListener(OnRelease);
-
+        grabInteractable.onActivate.AddListener(ToggleClamp);
         clampClose = Quaternion.Euler(closeAngle, 0f, 0f);
     }
 
-    void OnGrab(XRBaseInteractor interactor)
+    void ToggleClamp(XRBaseInteractor interactor)
     {
-        Quaternion targetRotation = Quaternion.Euler(openAngle, 0 , 0);
-        clamp.transform.localRotation = targetRotation;
+        isOpen = !isOpen;
+        if (isOpen)
+        {
+            Quaternion targetRotation = Quaternion.Euler(openAngle, 0, 0);
+            clamp.transform.localRotation = targetRotation;
+        }
+        else
+        {
+            clamp.transform.localRotation = clampClose;
+        }
+
     }
 
-    void OnRelease(XRBaseInteractor interactor)
-    {
-        clamp.transform.localRotation = clampClose;
-    }
 }
