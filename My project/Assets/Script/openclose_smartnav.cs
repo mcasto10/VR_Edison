@@ -6,24 +6,24 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class openclose_smartnav : MonoBehaviour
 {
     public GameObject clamp;
-    public float openAngle =-50f;
+    public float openAngle = -50f;
     public float closeAngle = -100f;
 
     private Quaternion clampOpen = Quaternion.identity;
     private Quaternion clampClose = Quaternion.identity;
 
     private XRGrabInteractable grabInteractable = null;
-    private bool isOpen = false;
+    public bool isOpen = false;
 
     // Start is called before the first frame update
     void Start()
     {
         grabInteractable = GetComponent<XRGrabInteractable>();
-        grabInteractable.onActivate.AddListener(ToggleClamp);
+        grabInteractable.activated.AddListener(ToggleClamp);
         clampClose = Quaternion.Euler(closeAngle, 0f, 0f);
     }
 
-    void ToggleClamp(XRBaseInteractor interactor)
+    void ToggleClamp(ActivateEventArgs args)
     {
         isOpen = !isOpen;
         if (isOpen)
@@ -35,7 +35,5 @@ public class openclose_smartnav : MonoBehaviour
         {
             clamp.transform.localRotation = clampClose;
         }
-
     }
-
 }
