@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8973,6 +8973,7 @@ GameObject:
   - component: {fileID: 810832995}
   - component: {fileID: 810832996}
   - component: {fileID: 810832997}
+  - component: {fileID: 810832998}
   m_Layer: 0
   m_Name: Magnet Interaction Point
   m_TagString: Untagged
@@ -9063,6 +9064,18 @@ MonoBehaviour:
   m_SocketActive: 1
   m_InteractableHoverScale: 1
   m_RecycleDelayTime: 1
+--- !u!114 &810832998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 810832994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dd4a78ee10b3384ba0232f358e6be3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &811080973
 GameObject:
   m_ObjectHideFlags: 0
@@ -13870,7 +13883,7 @@ HingeJoint:
   m_Anchor: {x: 1.13, y: -0.00000022351742, z: 0.25}
   m_Axis: {x: 0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 4.295374, y: 0.56099993, z: -2.765497}
+  m_ConnectedAnchor: {x: 4.2811513, y: 0.56199586, z: -2.351211}
   m_UseSpring: 1
   m_Spring:
     spring: 0
