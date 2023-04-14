@@ -5,10 +5,12 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class PoleSocketInteractor : XRSocketInteractor
 {
-    public openclose_smartnav clampController;
+    public openclose_smartnav clampControllerA;
+    public openclose_smartnav clampControllerB;
+    public openclose_smartnav clampControllerC;
 
     public override bool CanSelect(IXRSelectInteractable interactable)
     {
-        return base.CanSelect(interactable) && clampController.isOpen;
+        return base.CanSelect(interactable) && (clampControllerA.isOpen || clampControllerB.isOpen || clampControllerC.isOpen);
     }
 }
