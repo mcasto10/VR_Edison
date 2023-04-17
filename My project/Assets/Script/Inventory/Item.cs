@@ -11,15 +11,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
           public void GrabFromSlot()
           {
-               //if (obj.GetComponent<Item>() == null) return;
-               //if (obj.GetComponent<Item>().inSlot)
-               //{
-               //     obj.GetComponentInParent<Slot>().ItemInSlot = null;
-               //     obj.transform.parent = null;
-               //     obj.GetComponent<Item>().inSlot = false;
-               //     obj.GetComponent<Item>().currentSlot.ResetColor();
-               //     obj.GetComponent<Item>().currentSlot = null;
-               //}
                if (inSlot == true)
                {
                     currentSlot.ItemInSlot = null;
@@ -29,10 +20,6 @@ using UnityEngine.XR.Interaction.Toolkit;
                     currentSlot = null;
                     gameObject.GetComponent<XRGrabInteractable>().SetKinematic(false);
                }
-          }
-          public void Update()
-          {
-
           }
      }
 
