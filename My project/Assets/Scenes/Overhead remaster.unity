@@ -9152,7 +9152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa41d1f949a1402439aec9ed4731588d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myToggle: {fileID: 698974193}
+  player: {fileID: 1643808331}
+  boolList: 00000000
 --- !u!1 &701245338
 GameObject:
   m_ObjectHideFlags: 0
@@ -13190,7 +13191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa41d1f949a1402439aec9ed4731588d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myToggle: {fileID: 1066598812}
+  player: {fileID: 1643808331}
+  boolList: 00000000
 --- !u!1 &1072935745
 GameObject:
   m_ObjectHideFlags: 0
@@ -16949,7 +16951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa41d1f949a1402439aec9ed4731588d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myToggle: {fileID: 1331425434}
+  player: {fileID: 1643808331}
+  boolList: 00000000
 --- !u!1 &1337815098
 GameObject:
   m_ObjectHideFlags: 0
@@ -19477,7 +19480,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa41d1f949a1402439aec9ed4731588d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myToggle: {fileID: 0}
+  player: {fileID: 1643808331}
+  boolList: 00000000
 --- !u!1 &1542310540
 GameObject:
   m_ObjectHideFlags: 0
