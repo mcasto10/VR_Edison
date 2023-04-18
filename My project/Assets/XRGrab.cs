@@ -18,14 +18,13 @@ public class XRGrab : MonoBehaviour
         if (interactable.isSelected)
         {
             if (gameObject.GetComponent<Item> () == null) return; 
-            
+
             if (gameObject.GetComponent<Item>().inSlot) {
-                   Debug.Log("XRGrab has been intered");
-            gameObject.GetComponentInParent<Slot>().ItemInSlot = null; 
-            gameObject.transform.parent = null;
-            gameObject.GetComponent<Item>().inSlot = false;
-            gameObject.GetComponent<Item>().currentSlot.ResetColor();
-            gameObject.GetComponent<Item>().currentSlot = null;
+                gameObject.GetComponentInParent<Slot>().ItemInSlot = null; 
+                gameObject.transform.parent = null;
+                gameObject.GetComponent<Item>().inSlot = false;
+                gameObject.GetComponent<Item>().currentSlot.ResetColor();
+                gameObject.GetComponent<Item>().currentSlot = null;
             }
         }
     }

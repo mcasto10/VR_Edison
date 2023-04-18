@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -48,7 +48,7 @@ void Start() {
         ItemInSlot = obj;
         slotImage.color = Color.gray;
         
-       
+
     }
 
     

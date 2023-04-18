@@ -5,6 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Button
+  - SphereTwo
+  - SphereZero
+  - SphereThree
+  - SamplesInfoPanel
+  - SphereOne
+  - SetSafetyTag
+  - SetPoleMaster
+  - SetSmartNav
+  - SetCheckSmartNav
   layers:
   - Default
   - TransparentFX

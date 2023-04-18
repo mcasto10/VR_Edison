@@ -8,17 +8,11 @@ public class ToggleController : MonoBehaviour
 {
    public GameObject player; // gain access to the player's position
 
-    public List<bool> boolList = new List<bool> {false, false, false, false};
-
-    //  void Start()
-    // {
-    //     Debug.Log(currentScore);
-    //         List<bool> boolList = currentScore.getTeleportZone();
-    //         ToggleBoolList(boolList);
-    
-    // }
+    private List<bool> boolList;
 
     void Update() {
+
+       
         boolList = new List<bool> {false, false, false, false};
         // foreach(bool number in boolList) {
         //     Debug.Log(number);
@@ -28,6 +22,8 @@ public class ToggleController : MonoBehaviour
         //    Debug.Log("--------------------------");
 
         Vector3 currentPosition = player.transform.position;
+
+         Debug.Log(currentPosition.x);
         TeleportZone(currentPosition);
         ToggleBoolList();
 
@@ -53,28 +49,28 @@ public class ToggleController : MonoBehaviour
                         boolList.RemoveAt(0);
                         boolList.Insert(0, true);
                         // Debug.Log("Location 0");
-                        // setToggleScene2();
+                        setToggleScene2();
 
                     }
                     if(j == 1){
                         boolList.RemoveAt(1);
                         boolList.Insert(1, true);
                         //  Debug.Log("Location 1");
-                        // setToggleScene3();
+                        setToggleScene3();
                     }
 
                     if(j == 2){
                         boolList.RemoveAt(2);
                         boolList.Insert(2, true);
                         //  Debug.Log("Location 2");
-                        // setToggleScene5();
+                        setToggleScene5();
                     }
                     
                     if(j == 3){
                         boolList.RemoveAt(3);
                         boolList.Insert(3, true);
                         //  Debug.Log("Location 3");
-                        // setToggleScene9();
+                        setToggleScene9();
                     }
                 }
               }
@@ -116,85 +112,6 @@ public class ToggleController : MonoBehaviour
                     }
                 }
         }
-    }
-
-    public void ToggleValueChanged(Transform pos)
-    {
-
-          Vector3 currentPosition = pos.position;
-
-          Vector3[] myVectors = new Vector3[4];
-          // Scene 2
-          myVectors[0] = new Vector3(2.962f, 0.63f, -3.27f);
-          // Scene 3
-          myVectors[1] = new Vector3(2.952f, 0.09f, -2.68f);
-          // scene 5
-          myVectors[2] = new Vector3(4.478518f, 2.26f, -20.00f);
-          // sccene 9
-          myVectors[3] = new Vector3(4.476227f, 0.09f, -2.65f);
-
-          float epsilon = 0.0001f;
-
-        //   Debug.Log("Value 1: " + currentPosition.x.ToString("0.00000000"));
-
-        //   Type floatType = currentPosition.x.GetType();
-        //   int floatSize = sizeof(float);
-
-        //   Debug.Log("Type: " + floatType); // Outputs "Type: System.Single"
-        //   Debug.Log("Size: " + floatSize); // Outputs "Size: 4"
-       
-    //    Debug.Log("--------------------------");
-
-        // Debug.Log(myToggle.ToString());
-           
-        // checking to see what scene the user is currently in, then updating all those that are valid
-        for(int i = 0; i < myVectors.Length; i++){
-
-            // Debug.Log("Value 2: " + myVectors[i].x.ToString("0.00000000"));
-            // Debug.Log(currentPosition.x + " current position " + i);
-            // Debug.Log(myVectors[i].x + " loop position " + i );
-
-        //     Type valueType = myVectors[i].x.GetType();
-        //     int valueSize = sizeof(float);
-
-        //       Debug.Log("Type: " + valueType); // Outputs "Type: System.Single"
-        //   Debug.Log("Size: " + valueSize); // Outputs "Size: 4"
-
-            // Debug.Log(myVectors[i].x + " values" + currentPosition.x + "Current");
-            // Debug.Log(Mathf.Abs(myVectors[i].x - currentPosition.x) < epsilon);
-            // Debug.Log(Mathf.Approximately(myVectors[i].x, currentPosition.x));
-            // Debug.Log(new Vector3((float)currentPosition.x, (float)currentPosition.y, (float)currentPosition.z) == myVectors[i]);
-            // Debug.Log(myVectors[i] == currentPosition);
-            // Debug.Log(myVectors[i].Equals(currentPosition));
-
-            // if (new Vector3((float)currentPosition.x, (float)currentPosition.y, (float)currentPosition.z) == myVectors[i] ) {
-            if(Mathf.Abs(myVectors[i].x - currentPosition.x) < epsilon) {
-                // Debug.Log(myVectors[i].ToString());
-                for(int j = 0; j <= i; j++){
-                    Debug.Log(j);
-                    if(j == 0){
-                        Debug.Log("Location 0");
-                        setToggleScene2();
-
-                    }
-                    if(j == 1){
-                         Debug.Log("Location 1");
-                        // setToggleScene3();
-                    }
-
-                    if(j == 2){
-                         Debug.Log("Location 2");
-                        // setToggleScene5();
-                    }
-                    
-                    if(j == 3){
-                         Debug.Log("Location 3");
-                        // setToggleScene9();
-                    }
-                }
-            }
-        }
-
     }
 
     public void setToggleScene2(){

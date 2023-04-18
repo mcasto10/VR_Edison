@@ -9065,7 +9065,7 @@ GameObject:
   - component: {fileID: 698974194}
   m_Layer: 0
   m_Name: Phase Id and smart navigators
-  m_TagString: Untagged
+  m_TagString: SetSmartNav
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13104,7 +13104,7 @@ GameObject:
   - component: {fileID: 1066598813}
   m_Layer: 0
   m_Name: Pole Master
-  m_TagString: Untagged
+  m_TagString: SetPoleMaster
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16864,7 +16864,7 @@ GameObject:
   - component: {fileID: 1331425435}
   m_Layer: 0
   m_Name: Safety
-  m_TagString: Untagged
+  m_TagString: SetSafetyTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19393,7 +19393,7 @@ GameObject:
   - component: {fileID: 1524673882}
   m_Layer: 0
   m_Name: Check smart navigator connection
-  m_TagString: Untagged
+  m_TagString: SetCheckSmartNav
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
