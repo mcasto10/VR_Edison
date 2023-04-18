@@ -27,8 +27,4 @@ public class setLedColor : MonoBehaviour
         ledRenderer.material.color = Color.green;
     }
 
-    public void setRed() {
-        ledRenderer.material.color = Color.red;
-    }
-
 }

@@ -9,11 +9,28 @@ public class IOPairingMode : MonoBehaviour
     void Start()
     {
         ledRenderer = GetComponent<Renderer>();
+        // ledRenderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.PingPong(Time.time * 4, 1));
+        StartCoroutine(PairingMode());
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        ledRenderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.PingPong(Time.time * 4, 1));
+
+    public void StopPairingMode() {
+        StopAllCoroutines();
     }
+
+    IEnumerator PairingMode() {
+        while(true) {
+            // ledRenderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.PingPong(Time.time * 4, 1));
+            ledRenderer.material.color = Color.yellow;
+            yield return new WaitForSeconds(0.2f);
+            ledRenderer.material.color = Color.white;
+            yield return new WaitForSeconds(0.2f);
+            ledRenderer.material.color = Color.yellow;
+            yield return new WaitForSeconds(0.2f);
+            ledRenderer.material.color = Color.white;
+            yield return new WaitForSeconds(1f);
+        }
+    }
+
 }

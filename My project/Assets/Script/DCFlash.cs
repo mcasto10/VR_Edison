@@ -9,11 +9,19 @@ public class DCFlash : MonoBehaviour
     void Start()
     {
         ledRenderer = GetComponent<Renderer>();
+        StartCoroutine(Flash());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        ledRenderer.material.color = Color.Lerp(Color.white, Color.green, Mathf.PingPong(Time.time * 1, 1));
+    void StopFlash() {
+        StopAllCoroutines();
+    }
+
+    IEnumerator Flash() {
+        while(true) {
+            ledRenderer.material.color = Color.green;
+            yield return new WaitForSeconds(0.2f);
+            ledRenderer.material.color = Color.white;
+            yield return new WaitForSeconds(1f);   
+        }
     }
 }

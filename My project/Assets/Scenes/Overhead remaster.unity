@@ -10474,7 +10474,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882055176}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3831133a04e8314aae82c35a895b77c, type: 3}
   m_Name: 
@@ -11368,7 +11368,7 @@ GameObject:
   - component: {fileID: 1072935749}
   - component: {fileID: 1072935748}
   - component: {fileID: 1072935747}
-  - component: {fileID: 1072935751}
+  - component: {fileID: 1072935752}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: WAN
@@ -11458,7 +11458,7 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1072935745}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1072935751
+--- !u!114 &1072935752
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11467,7 +11467,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1072935745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3831133a04e8314aae82c35a895b77c, type: 3}
+  m_Script: {fileID: 11500000, guid: a61c314ba17c2614fa31b73f7b5577e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1074486496
@@ -11747,7 +11747,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1133660815}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3831133a04e8314aae82c35a895b77c, type: 3}
   m_Name: 
@@ -12395,7 +12395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1199810229
 Transform:
   m_ObjectHideFlags: 0
@@ -15268,7 +15268,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475707294}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f3831133a04e8314aae82c35a895b77c, type: 3}
   m_Name: 
