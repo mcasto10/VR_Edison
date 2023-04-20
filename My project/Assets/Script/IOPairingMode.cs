@@ -9,7 +9,6 @@ public class IOPairingMode : MonoBehaviour
     void Start()
     {
         ledRenderer = GetComponent<Renderer>();
-        // ledRenderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.PingPong(Time.time * 4, 1));
         StartCoroutine(PairingMode());
 
     }
@@ -21,7 +20,6 @@ public class IOPairingMode : MonoBehaviour
 
     IEnumerator PairingMode() {
         while(true) {
-            // ledRenderer.material.color = Color.Lerp(Color.white, Color.yellow, Mathf.PingPong(Time.time * 4, 1));
             ledRenderer.material.color = Color.yellow;
             yield return new WaitForSeconds(0.2f);
             ledRenderer.material.color = Color.white;

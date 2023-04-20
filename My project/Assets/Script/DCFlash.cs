@@ -12,8 +12,12 @@ public class DCFlash : MonoBehaviour
         StartCoroutine(Flash());
     }
 
-    void StopFlash() {
+    public void StopFlash() {
         StopAllCoroutines();
+    }
+
+    public void StartFlash() {
+        StartCoroutine(Flash());
     }
 
     IEnumerator Flash() {

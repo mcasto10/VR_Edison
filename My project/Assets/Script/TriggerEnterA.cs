@@ -9,8 +9,10 @@ public class TriggerEnterA : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
       GameObject.FindGameObjectWithTag("IO").GetComponent<IOPairingMode>().StopPairingMode();
+      GameObject.FindGameObjectWithTag("DC").GetComponent<DCFlash>().StopFlash();
       GameObject.FindGameObjectWithTag("IO").GetComponent<IOPairingMode>().enabled = false;
       GameObject.FindGameObjectWithTag("IO").GetComponent<IOFlash>().enabled = true;
+      GameObject.FindGameObjectWithTag("DC").GetComponent<DCFlash>().StartFlash();
       electricLine_A.SetActive(true);
     }
 }
