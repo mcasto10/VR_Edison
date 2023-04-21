@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1280
     height: 637.3334
   m_ShowMode: 4
-  m_Title: Inspector
+  m_Title: Game
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 48
+  controlID: 16
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: ProjectBrowser
+  m_Name: ConsoleWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
@@ -120,14 +120,14 @@ MonoBehaviour:
     y: 356.66666
     width: 978.6667
     height: 230.66672
-  m_MinSize: {x: 231, y: 271}
-  m_MaxSize: {x: 10001, y: 10021}
-  m_ActualView: {fileID: 12}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 12}
   - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 68
+  controlID: 17
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 59
+  controlID: 18
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -316,24 +316,24 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets/Script
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
-  m_StartGridSize: 64
+  m_StartGridSize: 50
   m_LastFolders:
-  - Assets/Scenes
-  m_LastFoldersGridSize: -1
+  - Assets/Script
+  m_LastFoldersGridSize: 50
   m_LastProjectPath: C:\Users\mcasto10\Desktop\VR_Project\VR_Edison\My project
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 150.33328}
-    m_SelectedIDs: bc8f0000
-    m_LastClickedID: 36796
-    m_ExpandedIDs: 00000000668f0000688f00006a8f00006c8f00006e8f0000708f0000728f0000748f0000768f0000788f00007a8f00007c8f00007e8f0000808f0000828f0000848f0000868f0000888f00008a8f0000c48f000094b0050000ca9a3b
+    scrollPos: {x: 0, y: 118.33328}
+    m_SelectedIDs: fe8e0000
+    m_LastClickedID: 36606
+    m_ExpandedIDs: 00000000b08e0000b28e0000b48e0000b68e0000b88e0000ba8e0000bc8e0000be8e0000c08e0000c28e0000c48e0000c68e0000c88e0000ca8e0000cc8e0000ce8e0000d08e0000d28e0000d48e000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -361,7 +361,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000668f0000688f00006a8f00006c8f00006e8f0000708f0000728f0000748f0000768f0000788f00007a8f00007c8f00007e8f0000808f0000828f0000848f0000868f0000888f00008a8f0000
+    m_ExpandedIDs: 00000000b08e0000b28e0000b48e0000b68e0000b88e0000ba8e0000bc8e0000be8e0000c08e0000c28e0000c48e0000c68e0000c88e0000ca8e0000cc8e0000ce8e0000d08e0000d28e0000d48e0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -386,8 +386,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: fa750000
+    m_LastClickedInstanceID: 30202
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -405,7 +405,7 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
+      m_ClientGUIView: {fileID: 5}
     m_CreateAssetUtility:
       m_EndAction: {fileID: 0}
       m_InstanceID: 0
@@ -414,7 +414,7 @@ MonoBehaviour:
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
     m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
+    m_GridSize: 50
   m_SkipHiddenPackages: 0
   m_DirectoriesAreaWidth: 207
 --- !u!114 &13
@@ -453,7 +453,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 624.6667
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -490,21 +490,21 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 300}
-      m_SelectedIDs: 4a9ffdff
-      m_LastClickedID: -155830
-      m_ExpandedIDs: 80e4fdffccebfdff80fbfdff8cfffdfffa2ffefffe2ffeffec4afeff868efeffe8dafeffd8eafeff12effeff100dffffa80fffff7416ffff3e7effff507effffda8effff80a0ffffe8b0ffff5ec1ffffbcd7ffffd6dfffffdadfffff2efbffffa2720000f8720000067300001473000084730000cc730000247400007874000084740000ba74000026760000367600005a760000ac760000b0760000d4760000e4760000307700005277000078770000aa770000f67700001c7800003278000086780000b6780000f0780000167a0000207a0000667a0000847a0000cc7a0000a6f5000008f90000aefb000094fc00000cfd0000c2070100340801004e0801007809010082090100180a0100e80a0100fa0a0100680b0100c80b0100da0b0100380c0100b40d0100f40d01007a0e0100920f0100ae0f0100760402005c2502001e270200be280200642b02002c2d0200725b0200cc6302003464020046640200606402009a6402006a65020092650200d065020010660200266602004866020086660200a0660200b4660200406702008a670200c6670200ca6702002c680200506802008c680200d4680200e2680200fa6902002c6a02009c6a0200b46a0200d46a0200e66a0200006b0200386b02004c6b02009a6b0200d86b0200006c020080f40500e2f40500fef4050026f5050032f505006ef5050020f605008ef60500a2f60500c4f60500f8f60500aaf705003cf805009cf80500acf80500c4f90500eef905005efa050076fa0500e0fa0500ecfa05005efb0500fcfb05002afc050034fc0500acfc050006fd050018fd0500
+      scrollPos: {x: 0, y: 240}
+      m_SelectedIDs: 5a750000
+      m_LastClickedID: 30042
+      m_ExpandedIDs: 2efbffff98710000bc710000187200005e7200000674000066740000887400009c74000048750000ba750000be7500004e760000ea760000067800001278000042780000c4790000207a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Socket Interactor
-        m_OriginalName: Socket Interactor
+        m_Name: 'Scene 9: Position'
+        m_OriginalName: 'Scene 9: Position'
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -155830
+        m_UserData: 29346
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -743,9 +743,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.08900001, y: 1.444, z: -0.000000007450581}
+    m_Target: {x: -0.60722995, y: -2.0002265, z: 0.3869105}
     speed: 2
-    m_Value: {x: 0.08900591, y: 1.4439977, z: 0.00000012917793}
+    m_Value: {x: -0.60722995, y: -2.0002265, z: 0.3869105}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -792,13 +792,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.2965014, y: 0.10193288, z: -0.03185591, w: 0.94906074}
+    m_Target: {x: 0.09449265, y: 0.79934406, z: -0.13048582, w: 0.578905}
     speed: 2
-    m_Value: {x: 0.2964482, y: 0.10335459, z: -0.032300074, w: 0.9488905}
+    m_Value: {x: 0.09449089, y: 0.7993292, z: -0.13048339, w: 0.5788942}
   m_Size:
-    m_Target: 0.8660254
+    m_Target: 0.2419703
     speed: 2
-    m_Value: 0.8660277
+    m_Value: 0.2419703
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -896,7 +896,7 @@ MonoBehaviour:
       y: 21
       width: 735.3334
       height: 314.66666
-    m_Scale: {x: 1, y: 1}
+    m_Scale: {x: 1.1042466, y: 1.1042466}
     m_Translation: {x: 367.6667, y: 157.33333}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -904,10 +904,10 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -367.6667
-      y: -157.33333
-      width: 735.3334
-      height: 314.66666
+      x: -332.95703
+      y: -142.48024
+      width: 665.91406
+      height: 284.96048
     m_MinimalGUI: 1
   m_defaultScale: 1
   m_LastWindowPixelSize: {x: 1103, y: 503.5}
