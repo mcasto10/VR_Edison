@@ -9,6 +9,14 @@ TagManager:
   - ERR
   - IO
   - DC
+  - SetCheckSmartNav
+  - SetSmartNav
+  - SetSafetyTag
+  - SetPoleMaster
+  - SphereTwo
+  - SphereZero
+  - SphereThree
+  - SphereOne
   layers:
   - Default
   - TransparentFX
