@@ -17,7 +17,7 @@ public class InventoryVR : MonoBehaviour
 
      private void Update()
      {
-          if (Input.GetButtonDown("XRI_Left_PrimaryButton"))
+          if (Input.GetButtonDown("XRI_Left_SecondaryButton"))
           {
                UIActive = !UIActive;
                Inventory.SetActive(UIActive);
