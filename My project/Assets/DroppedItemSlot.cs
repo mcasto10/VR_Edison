@@ -20,6 +20,8 @@ public class DroppedItemSlot : MonoBehaviour
           // clear item that is currently in the slot if there is any 
           if (ItemInSlot)
           {
+
+               Destroy(ItemInSlot);
                ItemInSlot = null;
           }
 
