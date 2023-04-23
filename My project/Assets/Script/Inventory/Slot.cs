@@ -6,7 +6,6 @@ public class Slot : MonoBehaviour
 {
      public GameObject ItemInSlot;
      public Image slotImage;
-     Color originalColor;
 
      public GameObject Background;
      public Material EmptyMaterial;
@@ -24,9 +23,14 @@ public class Slot : MonoBehaviour
           slotImage = GetComponentInChildren<Image>();
      }
 
+     private void Update()
+     {
+     }
+
 
      private void OnTriggerStay(Collider other)
      {
+          
           // if there is an item in the slot, return 
           if (ItemInSlot != null) return;
 
@@ -45,11 +49,13 @@ public class Slot : MonoBehaviour
           {
                InsertItem(obj);
           }
+          
      }
 
      private void OnTriggerExit(Collider other)
      {
-          ResetSlot();
+          if (ItemInSlot == null)
+               ResetSlot();
      }
 
      bool IsItem(GameObject obj)
@@ -94,7 +100,7 @@ public class Slot : MonoBehaviour
           Background.GetComponent<Image>().material = EmptyMaterial;
 
           //reset text 
-          text.GetComponent<TextMeshProUGUI>().text = "Empty";
+          text.GetComponent<TextMeshProUGUI>().text = "Empty Slot";
 
 
      }
