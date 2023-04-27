@@ -17,8 +17,5 @@ public class testing_input : MonoBehaviour
           {
                Debug.Log("right grip released");
           }
-          else
-               Debug.Log("nothing");
-          Debug.Log("updating");
      }
 }

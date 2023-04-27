@@ -4,16 +4,30 @@ using UnityEngine;
 
 public class TriggerEnterA : MonoBehaviour
 {
-    public GameObject electricLine_A;
 
-      public GameObject nextButton;
+    // public OnTrigger trigger; 
+
+    public GameObject electricLine_A;
 
     void OnTriggerEnter(Collider other)
     {
-      GameObject.FindGameObjectWithTag("IO").GetComponent<IOPairingMode>().StopPairingMode();
-      GameObject.FindGameObjectWithTag("IO").GetComponent<IOPairingMode>().enabled = false;
-      GameObject.FindGameObjectWithTag("IO").GetComponent<IOFlash>().enabled = true;
       electricLine_A.SetActive(true);
-      nextButton.SetActive(true);
+        // OnTrigger trigger = new OnTrigger();
+
+        // objectPass.GetComponent<Box_Collider>().enabled = false;
+
+        // trigger.OnTriggerEnter_A(objectPass);
     }
+
+    // // Start is called before the first frame update
+    // void Start()
+    // {
+        
+    // }
+
+    // // Update is called once per frame
+    // void Update()
+    // {
+        
+    // }
 }
