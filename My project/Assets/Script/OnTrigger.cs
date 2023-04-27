@@ -10,18 +10,16 @@ public class OnTrigger : MonoBehaviour
     public void OnTriggerEnter_A()
     {        
         textAppear.SetActive(true);
-        Debug.Log("Object Entered the trigger");
     }
 
      public void OnTriggerEnter_B()
     {
         textAppear.SetActive(true);
-        // Debug.Log("Object Entered the trigger");
     }
 
       public void OnTriggerEnter_C()
     {
         textAppear.SetActive(true);
-        // Debug.Log("Object Entered the trigger");
+  
     }
 }

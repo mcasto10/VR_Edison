@@ -8,6 +8,8 @@ public class TriggerEnterPoleMaster : MonoBehaviour
     
     public GameObject polemasterRoate;
 
+    public GameObject nextButton;
+
     void Update() {
     }
 
@@ -15,5 +17,6 @@ public class TriggerEnterPoleMaster : MonoBehaviour
     {
       polemasterRoate.SetActive(true);
       polemaster.SetActive(false);
+      nextButton.SetActive(true);
     }
 }
