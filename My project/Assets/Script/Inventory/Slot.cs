@@ -95,14 +95,11 @@ public class Slot : MonoBehaviour
       
      public void ResetSlot()
      {
-
           //reset color
           Background.GetComponent<Image>().material = EmptyMaterial;
 
           //reset text 
           text.GetComponent<TextMeshProUGUI>().text = "Empty Slot";
-
-
      }
 
 }

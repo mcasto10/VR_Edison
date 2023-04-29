@@ -1512,7 +1512,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 26122676}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GrabFromSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -18530,7 +18542,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 743875970}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GrabFromSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -20850,7 +20874,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 835240007}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GrabFromSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -46376,7 +46412,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1935025887}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GrabFromSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -48290,7 +48338,19 @@ MonoBehaviour:
       m_Calls: []
   m_SelectEntered:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2008701114}
+        m_TargetAssemblyTypeName: Item, Assembly-CSharp
+        m_MethodName: GrabFromSlot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_SelectExited:
     m_PersistentCalls:
       m_Calls: []
@@ -50936,7 +50996,7 @@ PrefabInstance:
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
@@ -50967,7 +51027,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 919132148906288680}
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
       propertyPath: m_Deactivated.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
@@ -50996,7 +51056,7 @@ PrefabInstance:
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OpenClamp
+      value: GrabFromSlot
       objectReference: {fileID: 0}
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
@@ -51011,7 +51071,7 @@ PrefabInstance:
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: openclose_smartnav, Assembly-CSharp
+      value: Item, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4261383238970276905, guid: bee63997e8d26ac4eade741825a94f9f,
         type: 3}
