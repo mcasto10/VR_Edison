@@ -14,9 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Pole Master Close-Up.unity
     guid: be5ab7299564df347a557780571ad6d8
-  - enabled: 1
-    path: Assets/Scenes/Overhead testing stuff.unity
-    guid: 5706725c9b36e0c4d9ce4596a822ecc2
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: bfa1182bd221b4ca89619141f66f1260,
       type: 2}
