@@ -1,33 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.Interaction.Toolkit;
 using TMPro;
 
-public class DroppedItemSlot : MonoBehaviour
+public class PhaseIdInventory : MonoBehaviour
 {
-     public GameObject ItemInSlot;
-     public GameObject text;
 
-     // Start is called before the first frame update
-     void Start()
-    {
-          gameObject.SetActive(false);
+     public GameObject ItemInSlot;
+    public GameObject ItemInsertPhaseId;
+     public GameObject text;
+void Start()
+    {  
+        InsertItem(ItemInsertPhaseId);  
     }
 
-     public void InsertItem(GameObject obj)
+       public void InsertItem(GameObject obj)
      {
 
-          // clear item that is currently in the slot if there is any 
-          if (ItemInSlot)
-          {
-               Destroy(ItemInSlot);
-               ItemInSlot = null;
-          }
-
           ItemInSlot = obj;
-
-          gameObject.SetActive(true);
+        
           // change the object's movement type to kinematic 
           //obj.GetComponent<XRGrabInteractable>().SetKinematic(true);
           obj.GetComponent<Rigidbody>().isKinematic = true;
@@ -48,13 +39,7 @@ public class DroppedItemSlot : MonoBehaviour
           obj.GetComponent<Item>().DropSlot = gameObject;
 
           // change slot text to the object text 
-          text.GetComponent<TextMeshProUGUI>().text = "Dropped: " + obj.GetComponent<Item>().ObjectName;
-     }
-
-     public void ResetSlot()
-     {
-          ItemInSlot = null;
-          text.GetComponent<TextMeshProUGUI>().text = "Last Item Dropped Slot (Empty)";
-          gameObject.SetActive(false);
+          text.GetComponent<TextMeshProUGUI>().text = obj.GetComponent<Item>().ObjectName;
      }
 }
+
