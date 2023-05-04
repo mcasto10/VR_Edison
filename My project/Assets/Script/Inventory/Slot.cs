@@ -14,7 +14,6 @@ public class Slot : MonoBehaviour
 
      public GameObject text;
 
-
      private GameObject CollidedObject;
 
      // Start is called before the first frame update
