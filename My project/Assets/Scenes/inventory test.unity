@@ -3378,6 +3378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Inventory: {fileID: 168169476}
+  MenuBar: {fileID: 392591299}
   Anchor: {fileID: 1399509940}
 --- !u!114 &1166179116
 MonoBehaviour:
